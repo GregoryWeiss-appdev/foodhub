@@ -12,7 +12,20 @@ body {
   background-size: cover;
 }
 
+.download-app {
+  background: url("/assets/images/download-hero.jpg") no-repeat center center;
+  background-size: cover;
+}
+
 .py-6 {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.text-download {
+  font-size: 20px;
+}
+
+.app-badge {
+  width: 200px;
 }
