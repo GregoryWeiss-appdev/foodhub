@@ -128,7 +128,7 @@
   </div>
 
   <div class="container-fluid py-6 bg-light">
-    <div class="row text-center">
+    <div class="row text-center mb-4">
       <div class="col-md-12">
         <h2 class="font-weight-bold">
           Sound bites
@@ -136,7 +136,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="media">
           <img src="/assets/images/user-1.jpg" class="mr-3 rounded-circle" width="50px">
           <div class="media-body">
@@ -150,7 +150,7 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="media">
           <img src="/assets/images/user-2.jpg" class="mr-3 rounded-circle" width="50px">
           <div class="media-body">
@@ -164,7 +164,7 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="media">
           <img src="/assets/images/user-3.jpg" class="mr-3 rounded-circle" width="50px">
           <div class="media-body">
@@ -178,7 +178,7 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="media">
           <img src="/assets/images/user-4.jpg" class="mr-3 rounded-circle" width="50px">
           <div class="media-body">
@@ -286,13 +286,18 @@
         <div class="col-md-2 offset-md-1 col-8 offset-2 mb-5">
           <h4 class="h6 font-weight-bold">Sign up for special offers</h4>
 
+
           <form>
             <div class="form-group">
-              <input type="email" placeholder="Email" class="form-control">
+              <label for="form_email" class="sr-only">Email address
+              </label>
+              <input id= "form_email" type="email" placeholder="Email" class="form-control">
             </div>
 
             <div class="form-group"> 
-              <input type="number" placeholder="Zip code" class="form-control">
+              <label for="form_number" class="sr-only">Zip Code
+              </label>
+              <input id="form_number" type="number" placeholder="Zip code" class="form-control">
             </div>
 
             <button class="btn btn-success btn-block">Send me treats</button>
