@@ -18,18 +18,38 @@
 
 <!-- Make it responsive to small screens -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Load Google Web Fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400&display=swap" rel="stylesheet">
+
+<link href="/assets/my_custom_styles.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <a href="https://www.google.com">
-    FOODHUB
-  </a>
-  <a href="https://www.google.com">
-    Sign In
-  </a>
-  <a href="https://www.google.com">
-    <i class="fa fa-shopping-bag fa-lg"></i>
-  </a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="https://www.google.com"><span class="h2 font-weight-bold">FOODHUB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.google.com">Sign in</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.google.com">
+            <i class="fa fa-shopping-bag fa-lg"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <h2>
     Who delivers in your neighborhood?
@@ -37,14 +57,14 @@
 
   <form>
     <div>
-      <label>
+      <label for="form_address">
         Enter your address below.
       </label>
 
       <div>
         <i class="fa fa-map-marker"></i>
 
-        <input type="text" placeholder="Street address, city, state">
+        <input id="form_address" type="text" placeholder="Street address, city, state">
       </div>
     </div>
 
